@@ -2,8 +2,10 @@ import tensorflow as tf
 
 
 # Define the variables here
-model_file = '/home/giovi/robot/tflite/tflite2/Sample_TFLite_model/detect.tflite'
-label_file = '/home/giovi/robot/tflite/tflite2/Sample_TFLite_model/labelmap.txt'
+#model_file = '/home/giovi/robot/tflite/tflite2/Sample_TFLite_model/detect.tflite'
+model_file = '/home/giovi/robot/tflite/tflite2/custom_model_lite/detect_quant.tflite'
+label_file = '/home/giovi/robot/tflite/tflite2/custom_model_lite/labelmap.txt'
+#label_file = '/home/giovi/robot/tflite/tflite2/Sample_TFLite_model/labelmap.txt'
 #model_file = 'sartore/razzismo.tflite'
 #label_file = 'sartore/labels_map.txt'
 num_threads = None

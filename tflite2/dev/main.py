@@ -50,9 +50,10 @@ def inf(frame):
     # TFLite_Detection_PostProcess:2 contains the scores of the rectangles
     # TFLite_Detection_PostProcess:3 contains the total number of detected items
 
-    rects = interpreter.get_tensor(output_details[0]['index'])
-    classes = interpreter.get_tensor(output_details[1]['index'])
-    scores = interpreter.get_tensor(output_details[2]['index'])
+    rects = interpreter.get_tensor(output_details[1]['index'])
+    classes = interpreter.get_tensor(output_details[3]['index'])
+    scores = interpreter.get_tensor(output_details[0]['index'])
+
 
         # The enumerate() function is used to get both the index and the value of each item in the list
     for index, score in enumerate(scores[0]):

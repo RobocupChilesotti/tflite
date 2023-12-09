@@ -1,7 +1,7 @@
 import cv2
 from initialize_tf import height, width
 
-video = '/home/giovi/robot/tflite/tflite2/vids/walk.mp4'
+video = '/home/giovi/robot/tflite/tflite2/vids/ping_pong.mp4'
 
 def initialize_stream():
     # Open video file
